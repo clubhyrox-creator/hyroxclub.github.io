@@ -60,35 +60,6 @@
       gap: 20px;
       align-items: center;
     }
-    details {
-      cursor: pointer;
-      max-width: 700px;
-      text-align: left;
-      border: 1px solid #3e74fa;
-      border-radius: 6px;
-      padding: 8px 12px;
-      background: #f0f5ff;
-      box-shadow: 0 2px 6px rgba(62,116,250,0.15);
-      transition: box-shadow 0.3s ease;
-    }
-    details[open] {
-      box-shadow: 0 4px 12px rgba(62,116,250,0.3);
-    }
-    summary {
-      font-weight: 600;
-      font-size: 1em;
-      color: #3e74fa;
-      outline: none;
-      user-select: none;
-    }
-    details > div {
-      margin-top: 10px;
-      max-height: 300px;
-      overflow-y: auto;
-      padding-right: 6px;
-      font-size: 0.9em;
-      color: #333;
-    }
     .contact-button {
       background-color: #3e74fa;
       color: white;
@@ -103,6 +74,20 @@
     }
     .contact-button:hover {
       background-color: #365bd3;
+    }
+    a.footer-link {
+      color: #3e74fa;
+      font-weight: 600;
+      font-size: 0.9em;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #3e74fa;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a.footer-link:hover {
+      background-color: #3e74fa;
+      color: white;
     }
   </style>
 </head>
@@ -123,17 +108,6 @@
       <li>PB tracking and improvement guides</li>
     </ul>
 
-    <h2>Privacy Policy</h2>
-    <div style="background: #f6faff; border-left: 4px solid #3e74fa; padding: 12px 16px; margin: 14px 0; border-radius: 6px; font-size: 1em;">
-      We respect your privacy and your training data!
-      <ul>
-        <li>No personal workout videos or audio recordings stored</li>
-        <li>No performance data shared with third parties</li>
-        <li>Minimal analytics collected only to improve your experience</li>
-        <li>All data processing follows Apple's guidelines</li>
-      </ul>
-    </div>
-
     <h2>Troubleshooting Tips</h2>
     <ul>
       <li>Force close the app and reopen it</li>
@@ -149,7 +123,8 @@
   </div>
 
   <footer class="footer">
-    <a class="contact-button" href="mailto:clubhyrox@gmail.com" role="button">Contact Us</a>
+    <a href="privacy.html" class="footer-link" role="link" aria-label="Privacy Policy">Privacy Policy</a>
+    <a class="contact-button" href="mailto:clubhyrox@gmail.com" role="button" aria-label="Contact Us">Contact Us</a>
   </footer>
 </body>
 </html>
